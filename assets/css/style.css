@@ -199,3 +199,16 @@ in other words, squares. Otherwise, you end up with ellipses.  */
     border-radius: 50%;
     /* Having an image that is 300/300px helps with the positioning of the runner */
 }
+
+/* Icons are font characters, think of as extensions to the alphabet */
+
+/* event times */
+
+#times{
+    background-image: url('../images/dublin-city.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    overflow: hidden;
+}
