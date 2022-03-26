@@ -170,3 +170,32 @@ hr {
 .right-about-heading p {
     text-align: right;
 }
+
+#welcome {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%;
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 50%;
+    /*  A trick that we use to create a  circle is to set the border-radius to 50%.  
+This will only work for containers  with an equal height and width dimensions;  
+in other words, squares. Otherwise, you end up with ellipses.  */
+    margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
+    /* I made a mistake and put "background-image: etc" and no image showed up */
+    height: 100%; 
+    /* the image won't show up unless you give it a height. That's 100% of the current div */
+    border-radius: 50%;
+    /* Having an image that is 300/300px helps with the positioning of the runner */
+}
