@@ -248,3 +248,17 @@ footer {
     padding: 5%;
     color:#3a3a3a;
 }
+
+/* gallery */
+#photos {
+    clear:both; 
+    /* We set clear:both so the photo section contents display below the header. */
+    line-height: 0;
+    /* line-height zero removes horizontal gaps between the images. */
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos > img {
+    width:100%
+}
