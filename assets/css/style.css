@@ -116,6 +116,7 @@ nav div {
 }
 
 /* Club Ethos */
+/* There is no float:center, so what's below needs to be used in that order and the auto which affects left/right is what is making it centered. */
 
 #club-ethos {
     height: 600px
@@ -136,4 +137,36 @@ nav div {
 #center-about {
     width: 33%;
     margin: 0 auto;
+
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear:both;
+    /* By setting clear: both we ensure that  each content block is aligned vertically.*/
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear:both;
+    /* By setting clear: both we ensure that  each content block is aligned vertically.*/
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
 }
