@@ -27,23 +27,19 @@ h1, h2 {
     margin-left: 30px;
 }
 
-/* Navigation links*/
+/* navigation links */
 
-nav div {
-    float: right;
-}
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
 
-#menu, logo {
+#menu, #logo {
     line-height: 75px;
 }
 
 #menu li {
-    display: inline;
-    text-align: right;
+    float: right;
     list-style-type: none;
     margin-right: 30px;
 }
@@ -61,7 +57,8 @@ nav div {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero-image*/
+/* hero image and cover text */
+
 #hero-outer {
     height: 600px;
     width: 100%;
@@ -85,9 +82,9 @@ nav div {
     animation-fill-mode: forwards;
 }
 
-/* Creates the level of zoom for hero image */
+/* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
     to{
@@ -96,7 +93,7 @@ nav div {
 }
 
 #cover-text {
-    font-size:130%;
+    font-size: 130%;
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -115,11 +112,10 @@ nav div {
     position: absolute;
 }
 
-/* Club Ethos */
-/* There is no float:center, so what's below needs to be used in that order and the auto which affects left/right is what is making it centered. */
+/* club ethos */
 
 #club-ethos {
-    height: 600px
+    height: 600px;
 }
 
 #left-about {
@@ -137,7 +133,6 @@ nav div {
 #center-about {
     width: 33%;
     margin: 0 auto;
-
 }
 
 hr {
@@ -145,12 +140,12 @@ hr {
     width: 100%;
     margin: 5px 0;
 }
+
 .left-about-heading {
     width: 60%;
     float: right;
     line-height: 20px;
-    clear:both;
-    /* By setting clear: both we ensure that  each content block is aligned vertically.*/
+    clear: both;
     margin-bottom: 50px;
 }
 
@@ -158,8 +153,7 @@ hr {
     width: 60%;
     float: left;
     line-height: 20px;
-    clear:both;
-    /* By setting clear: both we ensure that  each content block is aligned vertically.*/
+    clear: both;
     margin-bottom: 50px;
 }
 
@@ -185,31 +179,23 @@ hr {
     border-color: #ccc;
     border-width: 1px;
     border-radius: 50%;
-    /*  A trick that we use to create a  circle is to set the border-radius to 50%.  
-This will only work for containers  with an equal height and width dimensions;  
-in other words, squares. Otherwise, you end up with ellipses.  */
     margin: 0 auto;
 }
 
 #circle-cover-bg {
     background: url('../images/ethos-center-image.jpg') no-repeat center center;
-    /* I made a mistake and put "background-image: etc" and no image showed up */
-    height: 100%; 
-    /* the image won't show up unless you give it a height. That's 100% of the current div */
+    height: 100%;
     border-radius: 50%;
-    /* Having an image that is 300/300px helps with the positioning of the runner */
 }
-
-/* Icons are font characters, think of as extensions to the alphabet */
 
 /* event times */
 
-#times{
-    background-image: url('../images/dublin-city.webp');
+#times {
+    background-image: url('../images/times-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width:100%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -217,18 +203,19 @@ in other words, squares. Otherwise, you end up with ellipses.  */
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     width: 20%;
-    height:300px;
-    float:left;
+    height: 300px;
+    float: left;
     padding: 30px 0 0 10px;
     text-align: center;
     border: 2px solid white;
-    box-sizing:border-box;
-
+    box-sizing: border-box;
 }
 
 #times h2 {
     color: #fafafa;
 }
+
+/* footer */
 
 footer {
     height: 150px;
@@ -246,61 +233,65 @@ footer {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
 /* gallery */
+
 #photos {
-    clear:both; 
-    /* We set clear:both so the photo section contents display below the header. */
+    clear: both;
     line-height: 0;
-    /* line-height zero removes horizontal gaps between the images. */
     column-count: 4;
     column-gap: 0;
 }
 
 #photos > img {
-    width:100%
+    width: 100%;
 }
 
 /* Media queries */
-/* For larger to medium screen size from 1200px and down */
+
+/* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
+
     #welcome {
         padding: 30px 0;
         margin: 0;
     }
 
     #left-about, #right-about {
-        width:100%;
+        width: 100%;
         float: left;
         padding: 0;
     }
-    
+
     #center-about {
-        clear:both;
+        clear: both;
         width: 100%;
-        float:left;
+        float: left;
         padding: 0;
     }
 
     #times > div {
         width: 100%;
-        clear:both;
+        clear: both;
         height: 150px;
         padding: 0;
     }
-    hr{
+
+    hr {
         display: none;
     }
 }
+
 /* For medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
+
     #menu {
         clear: left;
         float: left;
@@ -308,6 +299,7 @@ footer {
         margin-bottom: 20px;
         line-height: 25px;
     }
+
     #cover-text {
         left: 0;
     }
@@ -317,20 +309,19 @@ footer {
         height: 1200px;
         margin: 0 auto;
     }
+
     .left-about-heading, .right-about-heading {
         width: inherit;
     }
+
     .left-about-heading h2, .right-about-heading h2 {
         width: 100%;
         text-align: center;
     }
 
-    left-about-heading p, .right-about-heading p {
+    .left-about-heading p, .right-about-heading p {
         text-align: center;
         padding: 0 20px;
-    }
-    #photos {
-        column-count: 3;
     }
 }
 
