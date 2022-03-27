@@ -253,7 +253,7 @@ footer {
 
 .form-section {
     clear: left;
-    background: url("assets/images/formbg.jpg");
+    background: url("../images/formbg.jpg");
     background-size: cover;
     background-position: center;
     height: 900px;
@@ -290,7 +290,7 @@ footer {
 
 .join-button {
     margin-top: 20px;
-    border-radius: 25px;
+    border-radius: 2px;
     padding: 15px 32px;
     text-align: center;
     font-size: 100%;
